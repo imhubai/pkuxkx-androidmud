@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pkuxkxLogin">
+
+    <RelativeLayout
+        android:id="@+id/LoginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_login"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <ImageButton
+            android:id="@+id/btn_language"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignTop="@id/btn_about"
+            android:layout_toStartOf="@id/btn_about"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/language"
+            app:srcCompat="@drawable/btn_language_selector"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="true"
+            android:text="@string/version"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+        <ImageButton
+            android:id="@+id/btn_about"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="0dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/about"
+            app:srcCompat="@drawable/btn_info_selector"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <LinearLayout
+                android:id="@+id/blackbase"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@id/SelectLayout"
+                android:background="@color/base_grey"
+                android:isScrollContainer="false"
+                android:orientation="vertical">
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/btn_enterServer"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/SelectLayout"
+                android:layout_alignEnd="@id/SelectLayout"
+                android:background="@drawable/btn_enter_selector"
+                android:text="@string/enterserver"
+                android:textColor="@color/enterserver"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/pkuxkxLOGO"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_above="@id/SelectLayout"
+            android:layout_below="@id/btn_language"
+            android:layout_alignStart="@id/SelectLayout"
+            android:clickable="true"
+            android:contentDescription="@string/logo"
+            android:focusable="true"
+            app:srcCompat="@drawable/pkuxkxlogo" />
+
+        <LinearLayout
+            android:id="@+id/SelectLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Hint_SelectServer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/hint_selectserver"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/ServerList"
+                android:layout_width="260dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:background="@color/server_bg_grey"
+                android:backgroundTint="@color/black"
+                android:contentDescription="@string/selectiphint"
+                android:entries="@array/serverip"
+                android:spinnerMode="dropdown"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <EditText
+                android:id="@+id/ipEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:backgroundTint="#000000"
+                android:ems="10"
+                android:hint="@string/cnipUTF"
+                android:inputType="textPersonName"
+                android:labelFor="@id/ServerList"
+                android:minHeight="48dp"
+                android:textColor="#000000"
+                android:textColorHint="#1B5E20"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

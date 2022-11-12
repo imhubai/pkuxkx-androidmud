@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/drawable/border_input_box.xml" value="0.3015" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/drawable/btn_done_black_24dp.xml" value="0.3015" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/drawable/btn_enter_selector.xml" value="0.3015" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/drawable/btn_info_selector.xml" value="0.3015" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/drawable/btn_language_selector.xml" value="0.3015" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/drawable/btn_remove_done_black_24dp.xml" value="0.3015" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2745" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/layout/activity_mud_setting.xml" value="0.3265625" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/layout/activity_mudmain.xml" value="0.3333333333333333" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/layout/activity_pkuxkx_login.xml" value="0.3333333333333333" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/layout/dialog_alert_layout.xml" value="0.3265625" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/layout/dialog_historyselect.xml" value="0.307518115942029" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/layout/dialog_index_info.xml" value="0.33" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/layout/dialog_login.xml" value="0.3333333333333333" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/layout/dialog_settings.xml" value="0.307518115942029" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/layout/layout_settings_dialog.xml" value="0.3265625" />
+        <entry key="..\:/Project/pkuxkx - Copy/app/src/main/res/layout/page_settings.xml" value="0.3265625" />
+        <entry key="..\:/Project/pkuxkx/app/src/main/res/drawable/btn_enter_selector.xml" value="0.2655" />
+        <entry key="..\:/Project/pkuxkx/app/src/main/res/layout/activity_mudmain.xml" value="0.22" />
+        <entry key="..\:/Project/pkuxkx/app/src/main/res/layout/activity_pkuxkx_login.xml" value="0.3166496424923391" />
+      </map>
+    </option>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="PWA">
+    <option name="wasEnabledAtLeastOnce" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

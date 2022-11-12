@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="serverip">
+            <item>国内UTF - mud.pkuxkx.net:8081</item>
+            <item>国内GBK - mud.pkuxkx.net:8080</item>
+            <item>国外UTF - pkuxkx.net:8081</item>
+            <item>国外GBK - pkuxkx.net:8080</item>
+            <item>自定义IP</item>
+        </string-array>
+
+</resources>

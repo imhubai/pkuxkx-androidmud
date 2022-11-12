@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="1dp"
+            tools:layout_editor_absoluteX="1dp">
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" android:layout_alignParentStart="true"
+                android:id="@+id/dialog_login_topview" android:background="#141414" android:elevation="5dp">
+
+            <TextView
+                    android:text="账号管理"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#EDEDED" android:layout_centerInParent="true" android:textSize="16sp"/>
+        </RelativeLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/dialog_login_listlayout"
+                android:layout_below="@id/dialog_login_topview">
+            <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical">
+                    <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/dialog_login_Bottombtn"
+                android:layout_below="@id/dialog_login_listlayout">
+
+            <Button
+                    android:text="取消"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/dialog_login_btncancel"
+                    android:layout_alignParentEnd="false"
+                    android:layout_centerVertical="true" android:layout_toLeftOf="@id/dialog_login_btnconfirm"/>
+            <CheckBox
+                    android:text="自动登录"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/dialog_login_autologin"
+                    android:layout_alignParentStart="true" android:layout_centerVertical="true"
+                    android:minHeight="48dp"/>
+            <Button
+                    android:text="确定"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/dialog_login_btnconfirm"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

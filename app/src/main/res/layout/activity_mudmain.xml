@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mudMain">
+
+    <RelativeLayout
+        android:id="@+id/RootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/TopView"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                    android:id="@+id/Top_ChatView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/Top_BtnView"
+                    android:layout_alignParentTop="true"
+                    android:background="#525252"
+                    android:orientation="vertical"
+                    android:visibility="visible"></LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/Top_BtnView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#967070">
+
+                <ScrollView
+                    android:id="@+id/Top_FastActionView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/Top_SetView" />
+
+                <LinearLayout
+                    android:id="@+id/Top_SetView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_settings"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/darker_gray"
+                        android:padding="0dp"
+                        android:text="@string/settings"
+                        android:textColor="#4E342E"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btn_hide"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/darker_gray"
+                        android:padding="0dp"
+                        android:text="@string/invisable"
+                        android:textColor="#4E342E"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/InfoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ControlView"
+            android:layout_below="@id/TopView"
+            android:background="@color/black">
+
+            <Button
+                android:id="@+id/btn_sendcmd"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="@string/send" />
+
+            <EditText
+                    android:id="@+id/CommandEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toStartOf="@id/btn_sendcmd"
+                    android:layout_toEndOf="@id/ItemView"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    tools:ignore="SpeakableTextPresentCheck" android:autofillHints=""/>
+
+            <LinearLayout
+                android:id="@+id/ItemView"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:background="#2D2D2D"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/OutPutView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/CommandEdit"
+                android:layout_toEndOf="@id/ItemView"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/outputEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:textColor="#E8E8E8"
+                    android:textSize="12sp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ControlView"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FF9800"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/StatusView"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:background="#515151"
+                android:orientation="vertical"
+                android:visibility="gone"></LinearLayout>
+
+            <GridView
+                android:id="@+id/ControlGird"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/StatusView" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

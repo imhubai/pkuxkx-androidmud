@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">北大侠客行</string>
+    <string name="version">1.1beta</string>
+    <string name="title_activity_pkuxkx_login">Pkuxkx登录</string>
+    <string name="logo">北大侠客行logo</string>
+    <string name="hint_selectserver">选择端口:</string>
+    <string name="enterserver">进入</string>
+    <string name="selectserver">选择服务器</string>
+    <string name="cnipUTF">mud.pkuxkx.net:8081</string>
+    <string name="cnipGBK">mud.pkuxkx.net:8080</string>
+    <string name="ipUTF">pkuxkx.net:8081</string>
+    <string name="ipGBK">pkuxkx.net:8080</string>
+    <string name="selectiphint">china UTF</string>
+    <string name="about">关于</string>
+    <string name="errorip">IP格式错误</string>
+    <string name="language">语言</string>
+</resources>
